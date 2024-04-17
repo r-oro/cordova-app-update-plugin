@@ -25,7 +25,7 @@
             </feature>
         </config-file>
         <framework src="androidx.appcompat:appcompat:1.6.1" />
-        <framework src="com.android.support:design:+" />
+        <framework src="com.google.android.material:1.11.0" />
          <!-- edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='MainActivity']" mode="merge">
             <activity android:name="MainActivity" android:theme="@style/Theme.AppCompat.NoActionBar" />
         </edit-config -->
