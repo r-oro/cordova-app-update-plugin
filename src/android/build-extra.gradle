@@ -12,5 +12,5 @@ allprojects {
 
 dependencies {
  	implementation 'com.google.android.play:app-update:2.1.0'
- 	implementation 'com.android.support:design:25.0.1'
+ 	implementation 'com.google.android.material:material:1.11.0'
 }
