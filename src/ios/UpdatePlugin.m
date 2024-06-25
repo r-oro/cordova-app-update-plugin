@@ -58,13 +58,13 @@ NSString *appStoreURL = nil;
 
     
     NSLocale *currentLocale = [NSLocale currentLocale];
-    NSArray *countryCodes;
+    NSArray *countryCode;
     if (@available(iOS 17.0, *)) {
       // Use regionCode for iOS 17 and above
-      countryCodes = [[NSLocale currentLocale] regionCode] ? @[ [[NSLocale currentLocale] regionCode] ] : [NSLocale ISOCountryCodes];
+      countryCode = [[NSLocale currentLocale] regionCode] ? @[ [[NSLocale currentLocale] regionCode] ] : [NSLocale ISOCountryCodes];
     } else {
       // Use ISOCountryCodes for versions below iOS 17
-      countryCodes = [NSLocale ISOCountryCodes];
+      countryCode = [NSLocale ISOCountryCodes];
     }
     //NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
     NSURL *lookupURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://itunes.apple.com/lookup?bundleId=%@&t=%f&country=%@",
